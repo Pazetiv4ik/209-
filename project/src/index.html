@@ -21,12 +21,23 @@
 
             <div>
                <ul class="links">
-                  <li><a href="">Главная</a></li>
-                  <li><a href="">Каталог</a></li>
-                  <li><a href="">О нас</a></li>
-                  <li><a href="">Контакт</a></li>
                   <li>
-                     <a href="">
+                     <a href="http://127.0.0.1:5500/project/src/index.html"
+                        >Главная</a
+                     >
+                  </li>
+                  <li>
+                     <a
+                        href="https://sailkarelia.ru/?yclid=17161641071288516607"
+                        >Каталог</a
+                     >
+                  </li>
+                  <li><a href="#about">О нас</a></li>
+                  <li><a href="tel:+78122507542">Контакт</a></li>
+                  <li>
+                     <a
+                        href="https://ticrk.ru/companies/?ysclid=ma3uabhsno746490060"
+                     >
                         <img class="people" src="../assets/svg/people.svg" />
                         Оставьте заявку
                      </a>
@@ -42,7 +53,7 @@
             </h1>
             <p></p>
             <button>
-               <a href="">Связаться</a>
+               <a>Sдесь вы сможете приобрести тур по Карелии</a>
             </button>
          </div>
 
@@ -63,35 +74,66 @@
                />
             </div>
          </div>
+      </section>
 
-         <section class="catalog">
-            <div class="catalog-text">
-               <h1>Каталог</h1>
-            </div>
+      <section class="catalog">
+         <div class="catalog-text">
+            <h1>Каталог</h1>
+         </div>
 
-            <div class="your-class">
-               <figure class="slide">
-                  <img src="../assets/images/liker.jpg" alt="" />
-                  <figcaption><span>Наскальные рисунки</span></figcaption>
-               </figure>
-               <figure class="slide">
-                  <img src="../assets/images/Вал_гб_6.jpg" alt="" />
-                  <figcaption><span>Рускеала</span></figcaption>
-               </figure>
-               <figure class="slide">
-                  <img src="../assets/images/123321.jpg" alt="" />
-                  <figcaption><span>Кижи</span></figcaption>
-               </figure>
-               <figure class="slide">
-                  <img src="../assets/images/XXXL.jpg" alt="" />
-                  <figcaption><span>Кивач</span></figcaption>
-               </figure>
-               <figure class="slide">
-                  <img src="../assets/images/petrozavodsk.jpg" alt="" />
-                  <figcaption><span>Онежская набережная</span></figcaption>
-               </figure>
+         <div class="your-class">
+            <figure class="slide">
+               <img src="../assets/images/liker.jpg" alt="" />
+               <figcaption><span>Наскальные рисунки</span></figcaption>
+            </figure>
+            <figure class="slide">
+               <img src="../assets/images/Вал_гб_6.jpg" alt="" />
+               <figcaption><span>Рускеала</span></figcaption>
+            </figure>
+            <figure class="slide">
+               <img src="../assets/images/123321.jpg" alt="" />
+               <figcaption><span>Кижи</span></figcaption>
+            </figure>
+            <figure class="slide">
+               <img src="../assets/images/XXXL.jpg" alt="" />
+               <figcaption><span>Кивач</span></figcaption>
+            </figure>
+            <figure class="slide">
+               <img src="../assets/images/petrozavodsk.jpg" alt="" />
+               <figcaption><span>Онежская набережная</span></figcaption>
+            </figure>
+         </div>
+      </section>
+
+      <section id="about" class="about-us">
+         <div>
+            <h1>О нас</h1>
+            <p>
+               Мы - команда, которая предлагает уникальные туры по Карелии. Наши
+               специалисты помогут Вам открыть для себя все красоты этого
+               региона, погрузиться в его культуру и традиции.
+            </p>
+         </div>
+
+         <div>
+            <div>
+               <p>
+                  Компания основана в 2000 годах Мы начинали свою деятельност с
+                  небольших ткурестических походов экпидициями и просто активным
+                  отдыхом
+               </p>
+               <p1>За 25 лет существования компании мы:</p1>
+
+               <p1>✅ Приняли более 2 000 000 гостей</p1>
+               <p1>✅ Расширили базу нашего снаряжения</p1>
+               <p1>✅ Обзавелись собственным лагерем</p1>
+               <p>
+                  С нами вы увидите прекрассные водопады, скалы, леса и древние
+                  петроглифы и всю красоту Карельского края
+               </p>
             </div>
-         </section>
+            <div></div>
+         </div>
       </section>
 
       <script
@@ -114,7 +156,6 @@
                autoplaySpeed: 2000,
             });
 
-            // Реализация эффекта при наведении
             $(".slide").hover(
                function () {
                   $(this).find("img").css("transform", "translateY(-10px)");
@@ -128,5 +169,4 @@
          });
       </script>
    </body>
-
-   </html>
+</html>
