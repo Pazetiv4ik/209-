@@ -38,21 +38,19 @@
    align-items: center;
    justify-items: center;
    text-align: center;
-   gap: 30px;
+   gap: 10px;
 
    list-style: none;
 
-   gap: 30px;
+   gap: 10px;
+   
 }
 
 .people {
    display: flex;
-   flex-direction: column;
-   align-items: right;
-   justify-items: right;
-   justify-content: space-between;
-   padding: 1px;
-   gap: 2px;
+   justify-content: right;
+   align-items: center;
+   gap: 10px;
    width: 25px;
    height: 25px;
 }
@@ -80,15 +78,14 @@ li {
    text-align: center;
    text-decoration: none;
    justify-items: center;
-   gap: 20px;
+   gap: 10px;
 
    h1 {
       font-size: 60px;
       text-align: center;
    }
-   a{
+   a {
       color: #ffffff;
-      
    }
    p {
       font-size: 18px;
@@ -102,7 +99,6 @@ li {
       border: none;
       border-radius: 24px;
    }
-   
 }
 
 .social-container {
@@ -233,37 +229,189 @@ figure {
       align-items: center;
    }
 }
+.fixed-title {
+   position: absolute;
+   color: #ffffff;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 2px;
+   z-index: 100;
+}
 
-.about-us{
-   color: fuchsia;
-   background-image: url("/project/assets/images/sun.jpg");
+.about-us {
+   background-image: url("/project/assets/images/1233333.jpg");
+   position: relative;
+   display: flex;
+   align-items: center;
+   padding: 30px;
+
+   justify-content: space-between;
+   h1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   p1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+.about-images {
+   display: flex;
+   gap: 10px;
+}
+
+.right-image-container {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.about-images img {
+   width: 300px;
+   height: auto;
+   border: 1px solid #ccc;
+   border-top-left-radius: 100;
+}
+.rounded-corner {
+   width: 300px;
+   height: 200px;
+
+   background-image: url("../../../assets/images/sun.jpg");
    background-size: cover;
-   background-position: center;
-   list-style-type:none; margin-left:-40px; font-size:18px; line-height:1.6em; color:#000000;
-   background-repeat: no-repeat;
-   h1{
-      align-items: center;
+
+   border-radius: 100px 20px 20px 20px;
+}
+.rounded-corner1 {
+   border-bottom-right-radius: 100px;
+   border-radius: 20px 20px 100px;
+}
+.rounded-corner2 {
+   border-radius: 20px;
+}
+.квадратик {
+   background-color: white;
+   position: relative;
+   border: 2px solid rgb(0, 0, 0);
+   padding: 10px;
+   p2 {
+      font-weight: bold;
       display: flex;
       flex-direction: column;
    }
-   p{
-      padding: 20px;
-      color: black;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-   }
-   
-}
-p1{
-   
-      padding: 20px;
-      color: black;
-      display: flex;
-      align-items: center;
-      padding-right: 1200px;
-      flex-direction: column;
-
+   margin: 10px;
+   width: 300px;
 }
 
+.квадратик p1 {
+   display: block;
+   margin-bottom: 5px;
+}
+.green {
+   color: green;
+}
+.about-logo {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 50px;
+   height: auto;
+}
+.gallery-section {
+   margin-top: 20px;
+   text-align: center;
+   /* Добавляем следующие стили */
+   background-image: url(/project/assets/images/background.jpg); /* Указываем путь к фоновому изображению */
+   background-size: cover; /* Растягиваем изображение на всю область */
+   background-repeat: no-repeat; /* Запрещаем повторение изображения */
+   background-position: center; /* Центрируем изображение */
+   padding: 20px; /* Добавляем отступы, чтобы контент не прилегал к краям */
+   margin-top: 20px;
+   text-align: center;
+}
+.gallery-content {
+   
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center; 
+}
 
+
+.gallery-content img {
+   
+   width: 30%; 
+   margin: 0.5%; 
+   background-color: rgb(0, 0, 0);
+   
+}
+
+
+.gallery-section h1 {
+   text-align: left;
+   color: rgb(3, 253, 24);
+   
+   
+}
+
+.gallery-tabs {
+   margin-bottom: 20px;
+  display: flex; 
+  gap: 10px; 
+   justify-content: right;
+   position: relative;
+   text-align: right;
+   gap: 10px;
+   margin-bottom: 1px;
+}
+
+.gallery-tabs button {
+   outline: none; 
+   border: none; 
+   padding: 10px 20px;
+   margin: 0 5px;
+   background-color: #00000059; 
+   color: #0cec04; 
+   cursor: pointer;
+   border-radius: 100px;
+}
+.gallery-tabs button::hover{
+   background-color: #dddddd00;
+}
+
+
+.gallery-content {
+   display: flex;
+   justify-content: center; 
+   gap: 10px; 
+   flex-wrap: wrap; 
+   align-items: center;
+   display: flex;
+   flex-direction:row
+   
+}
+
+.gallery-content img {
+   border-radius: 20px;
+   
+   width:  250px;
+   height: 225px;
+   margin: 10px;
+   object-fit: cover; 
+}
+.active-tab-indicator {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: auto;
+   height: 3px;
+   background-color: green;
+   transition: all 0.3s ease; 
+}

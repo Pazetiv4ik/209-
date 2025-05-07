@@ -106,33 +106,115 @@
       </section>
 
       <section id="about" class="about-us">
-         <div>
-            <h1>О нас</h1>
-            <p>
-               Мы - команда, которая предлагает уникальные туры по Карелии. Наши
-               специалисты помогут Вам открыть для себя все красоты этого
-               региона, погрузиться в его культуру и традиции.
-            </p>
-         </div>
+         <div class="about-text">
+            <h1 class="fixed-title">О нас</h1>
 
-         <div>
-            <div>
+            <div class="квадратик">
                <p>
-                  Компания основана в 2000 годах Мы начинали свою деятельност с
-                  небольших ткурестических походов экпидициями и просто активным
+                  Компания основана в 2000 годах мы начали свою деятельность с
+                  небольших турестических походов экспидициями и просто активным
                   отдыхом
                </p>
-               <p1>За 25 лет существования компании мы:</p1>
-
-               <p1>✅ Приняли более 2 000 000 гостей</p1>
-               <p1>✅ Расширили базу нашего снаряжения</p1>
-               <p1>✅ Обзавелись собственным лагерем</p1>
-               <p>
-                  С нами вы увидите прекрассные водопады, скалы, леса и древние
+               <br />
+               <p1>
+                  За <span class="green">25 лет</span> существования компании
+                  мы:</p1
+               >
+               <br />
+               <p2>✅ Приняли более 2 000 000 гостей</p2>
+               <br />
+               <br />
+               <p2>✅ Расширили базу нашего снаряжения</p2>
+               <br />
+               <br />
+               <p2>✅ Обзавелись собственным лагерем</p2>
+               <br />
+               <br />
+               <p1
+                  >С нами вы увидите прекрасные водопады, скалы, леса и древние
                   петроглифы и всю красоту Карельского края
-               </p>
+               </p1>
+               <br />
+               <br />
+               <p1><span class="green">Ощути Карелию вместе с нами!</span></p1>
+               <img
+                  class="about-logo"
+                  src="../assets/svg/logogo.svg"
+                  alt="Логотип компании"
+               />
             </div>
-            <div></div>
+         </div>
+         <div class="about-images">
+            <img
+               class="rounded-corner"
+               src="../assets/images/sun.jpg"
+               alt="Image 1"
+            />
+            <div class="right-image-container">
+               <img
+                  class="rounded-corner2"
+                  src="../assets/images/sun.jpg"
+                  alt="Image 1"
+               />
+               <img
+                  class="rounded-corner1"
+                  src="../assets/images/popopop.jpg"
+                  alt="Image 2"
+               />
+            </div>
+         </div>
+      </section>
+
+      <section class="gallery-section">
+         <h1>Галерея</h1>
+         <div class="gallery-tabs">
+            <button onclick="showGallery('tab1')" data-tab="tab1">Рускеала</button>
+            <button onclick="showGallery('tab2')" data-tab="tab2">Кижи</button>
+            <button onclick="showGallery('tab3')" data-tab="tab3">Кивач</button>
+            <button onclick="showGallery('tab4')" data-tab="tab4">Все</button>
+            <div class="active-tab-indicator"></div>
+         </div>
+
+         <div id="tab1" class="gallery-content">
+            <img src="../assets/images/i123123.jpg" alt="Image 1" />
+            <img src="../assets/images/3-4.jpg" alt="Image 2" />
+            <img src="../assets/images/original123.jpg" alt="Image 2.1" />
+            <img
+               src="../assets/images/shutterstock_371987242-min.jpg"
+               alt="Image 2.2"
+            />
+         </div>
+
+         <div id="tab2" class="gallery-content" style="display: none">
+            <img src="../assets/images/123321.jpg" alt="Image 3" />
+            <img src="../assets/images/3da.jpg" alt="Image 4" />
+            <img src="../assets/images/lilipopo.jpg" alt="Image 4.1" />
+            <img src="../assets/images/333i.jpg" alt="Image 4.2" />
+         </div>
+
+         <div id="tab3" class="gallery-content" style="display: none">
+            <img src="../assets/images/1920.jpg" alt="Image 5" />
+            <img src="../assets/images/XXXL.jpg" alt="Image 6" />
+            <img src="../assets/images/kivach.jpg" alt="Image 6.1" />
+            <img src="../assets/images/DSC_7193.jpg" alt="Image 6.2" />
+         </div>
+
+         <div id="tab4" class="gallery-content" style="display: none">
+            <img
+               src="../assets/images/shutterstock_371987242-min.jpg"
+               alt="Image 2.2"
+            />
+            <img src="../assets/images/333i.jpg" alt="Image 4.2" />
+            <img src="../assets/images/lilipopo.jpg" alt="Image 4.1" />
+            <img src="../assets/images/original123.jpg" alt="Image 2.1" />
+            <img src="../assets/images/XXXL.jpg" alt="Image 6" />
+            <img src="../assets/images/1920.jpg" alt="Image 5" />
+            <img src="../assets/images/3da.jpg" alt="Image 4" />
+            <img src="../assets/images/123321.jpg" alt="Image 3" />
+            <img src="../assets/images/3-4.jpg" alt="Image 2" />
+            <img src="../assets/images/i123123.jpg" alt="Image 1" />
+            <img src="../assets/images/Вал_гб_6.jpg" alt="Image 7" />
+            <img src="../assets/images/123321.jpg" alt="Image 8" />
          </div>
       </section>
 
@@ -167,6 +249,15 @@
                }
             );
          });
+
+         function showGallery(tabId) {
+            const tabs = ["tab1", "tab2", "tab3", "tab4"];
+            tabs.forEach(tab => {
+               const element = document.getElementById(tab);
+               element.style.display = tab === tabId ? "flex" : "none";
+               element.style.justifyContent = "center";
+            });
+         }
       </script>
    </body>
 </html>
