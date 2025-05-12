@@ -231,7 +231,7 @@ figure {
 }
 .fixed-title {
    position: absolute;
-   color: #ffffff;
+   color: #69ee4e;
    top: 0;
    left: 0;
    width: 100%;
@@ -241,28 +241,42 @@ figure {
 
 .about-us {
    background-image: url("/project/assets/images/1233333.jpg");
+
    position: relative;
    display: flex;
    align-items: center;
    padding: 30px;
-
    justify-content: space-between;
+
+   background-repeat: no-repeat;
+
+   background-position: center;
+
+   background-size: cover;
+
+   background-blend-mode:color ;
+
+   background-color: #ffffff60;
+
    h1 {
       display: flex;
       flex-direction: column;
       align-items: center;
    }
+
    p1 {
       display: flex;
       flex-direction: column;
       align-items: center;
    }
+
    p {
       display: flex;
       flex-direction: column;
       align-items: center;
    }
 }
+
 
 .about-images {
    display: flex;
@@ -328,12 +342,18 @@ figure {
 .gallery-section {
    margin-top: 20px;
    text-align: center;
-   /* Добавляем следующие стили */
-   background-image: url(/project/assets/images/background.jpg); /* Указываем путь к фоновому изображению */
-   background-size: cover; /* Растягиваем изображение на всю область */
-   background-repeat: no-repeat; /* Запрещаем повторение изображения */
-   background-position: center; /* Центрируем изображение */
-   padding: 20px; /* Добавляем отступы, чтобы контент не прилегал к краям */
+  
+   background-image: url(/project/assets/images/background.jpg); 
+   background-repeat: no-repeat;
+
+   background-position: center;
+
+   background-size: cover;
+
+   background-blend-mode:color ;
+
+   background-color: #ffffff60; 
+   padding: 20px;
    margin-top: 20px;
    text-align: center;
 }
@@ -356,7 +376,7 @@ figure {
 
 .gallery-section h1 {
    text-align: left;
-   color: rgb(3, 253, 24);
+   color: rgb(85, 241, 85);
    
    
 }
